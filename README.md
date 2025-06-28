@@ -6,7 +6,7 @@ Este proyecto es una Web API desarrollada como parte de una prueba técnica para
 ## ✨ Características
 
 - ✅ Operaciones CRUD completas (Create, Read, Update, Delete)
-- ✅ Base de datos en memoria para pruebas
+- ✅ Base de datos en memoria 
 - ✅ Documentación automática con Swagger/OpenAPI
 - ✅ Validaciones de datos con Data Annotations
 - ✅ Arquitectura limpia con separación de responsabilidades
