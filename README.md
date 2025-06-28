@@ -36,7 +36,7 @@ crudProduct/
 
 1. **Clonar el repositorio**
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/jfrancobeta/CrudNet.git
    cd crudProduct
    ```
 
@@ -54,18 +54,18 @@ crudProduct/
    
    La aplicación se abrirá automáticamente en el navegador mostrando la documentación Swagger en:
    ```
-   https://localhost:7xxx/swagger
+   https://localhost:7069/swagger
    ```
 
 ## 🌐 Endpoints de la API
 
-| Método | Ruta | Descripción | Código de Respuesta |
-|--------|------|-------------|-------------------|
-| `GET` | `/api/product` | Obtener todos los productos | 200 OK |
-| `GET` | `/api/product/{id}` | Obtener un producto por ID | 200 OK / 404 Not Found |
-| `POST` | `/api/product` | Crear un nuevo producto | 201 Created / 400 Bad Request |
-| `PUT` | `/api/product/{id}` | Actualizar un producto existente | 200 OK / 404 Not Found / 400 Bad Request |
-| `DELETE` | `/api/product/{id}` | Eliminar un producto | 204 No Content / 404 Not Found |
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| `GET` | `/api/product` | Obtener todos los productos |
+| `GET` | `/api/product/{id}` | Obtener un producto por ID | 
+| `POST` | `/api/product` | Crear un nuevo producto | 
+| `PUT` | `/api/product/{id}` | Actualizar un producto existente | 
+| `DELETE` | `/api/product/{id}` | Eliminar un producto | 
 
 ## ✅ Validaciones
 
@@ -85,78 +85,6 @@ El modelo `Product` incluye las siguientes validaciones:
 
 *Las validaciones están implementadas mediante Data Annotations en el modelo Product.*
 
-## 🧪 Ejemplos de Uso
-
-### Crear un nuevo producto (POST)
-
-**Request:**
-```http
-POST /api/product
-Content-Type: application/json
-
-{
-  "name": "Teclado inalámbrico",
-  "price": 129.99,
-  "quantity": 5
-}
-```
-
-**Response:**
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "id": 1,
-  "name": "Teclado inalámbrico",
-  "price": 129.99,
-  "quantity": 5
-}
-```
-
-### Actualizar un producto (PUT)
-
-**Request:**
-```http
-PUT /api/product/1
-Content-Type: application/json
-
-{
-  "name": "Teclado inalámbrico RGB",
-  "price": 149.99,
-  "quantity": 3
-}
-```
-
-### Obtener todos los productos (GET)
-
-**Request:**
-```http
-GET /api/product
-```
-
-**Response:**
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-[
-  {
-    "id": 1,
-    "name": "Teclado inalámbrico RGB",
-    "price": 149.99,
-    "quantity": 3
-  }
-]
-```
-
-## 🔧 Tecnologías Utilizadas
-
-- **ASP.NET Core 6.0+** - Framework web
-- **Entity Framework Core** - ORM (con InMemoryDatabase)
-- **Swagger/OpenAPI** - Documentación de API
-- **Data Annotations** - Validaciones
-- **Dependency Injection** - Inyección de dependencias
 
 ## 🧠 Notas Técnicas
 
@@ -165,21 +93,12 @@ Content-Type: application/json
 - Swagger está habilitado por defecto para facilitar la exploración y prueba de la API
 - La arquitectura sigue principios de separación de responsabilidades con capas bien definidas
 
-## 📝 Posibles Mejoras
-
-- [ ] Implementar logging con Serilog
-- [ ] Agregar pruebas unitarias e integración
-- [ ] Implementar paginación para el endpoint GET
-- [ ] Agregar filtros de búsqueda
-- [ ] Implementar autenticación y autorización
-- [ ] Agregar versionado de API
 
 ## 📌 Autor
 
 **Juan David Franco Betancur**
 - 📧 Email: juandavid.francob@gmail.com
-- 🔗 LinkedIn: [Agregar perfil]
-- 🐙 GitHub: [Agregar perfil]
+
 
 ---
 
