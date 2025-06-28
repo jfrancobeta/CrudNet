@@ -1,5 +1,4 @@
-📄 Descripción breve del proyecto
-Este proyecto es una Web API RESTful desarrollada en ASP.NET Core como parte de una prueba técnica para el cargo de desarrollador. La API permite realizar operaciones CRUD sobre un recurso Product, utilizando una base de datos en memoria para simular la persistencia.
+
 
 
 # 🛠️ Prueba Técnica - CRUD de Productos en ASP.NET Core
