@@ -1,9 +1,9 @@
-# 🛠️ CRUD de Productos - ASP.NET Core Web API
+#  CRUD de Productos - ASP.NET Core Web API
 
 Este proyecto es una Web API desarrollada como parte de una prueba técnica para el cargo de desarrollador. Implementa operaciones CRUD completas sobre un recurso de tipo **Product** utilizando una base de datos en memoria.
 
 
-## ✨ Características
+##  Características
 
 - ✅ Operaciones CRUD completas (Create, Read, Update, Delete)
 - ✅ Base de datos en memoria 
@@ -12,7 +12,7 @@ Este proyecto es una Web API desarrollada como parte de una prueba técnica para
 - ✅ Arquitectura limpia con separación de responsabilidades
 - ✅ Inyección de dependencias
 
-## 📚 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 crudProduct/
@@ -30,7 +30,7 @@ crudProduct/
 ├── Program.cs                     # Punto de entrada de la aplicación
 ```
 
-## 🚀 Instalación y Ejecución
+##  Instalación y Ejecución
 
 ### Pasos para ejecutar
 
@@ -57,7 +57,7 @@ crudProduct/
    https://localhost:7069/swagger
    ```
 
-## 🌐 Endpoints de la API
+##  Endpoints de la API
 
 | Método | Ruta | Descripción |
 |--------|------|-------------|
@@ -67,7 +67,7 @@ crudProduct/
 | `PUT` | `/api/product/{id}` | Actualizar un producto existente | 
 | `DELETE` | `/api/product/{id}` | Eliminar un producto | 
 
-## ✅ Validaciones
+##  Validaciones
 
 El modelo `Product` incluye las siguientes validaciones:
 
@@ -86,7 +86,7 @@ El modelo `Product` incluye las siguientes validaciones:
 *Las validaciones están implementadas mediante Data Annotations en el modelo Product.*
 
 
-## 🧠 Notas Técnicas
+##  Notas Técnicas
 
 - El proyecto utiliza una base de datos **en memoria** para facilitar las pruebas y demostración
 - Todos los datos se pierden al reiniciar la aplicación
@@ -94,7 +94,7 @@ El modelo `Product` incluye las siguientes validaciones:
 - La arquitectura sigue principios de separación de responsabilidades con capas bien definidas
 
 
-## 📌 Autor
+##  Autor
 
 **Juan David Franco Betancur**
 - 📧 Email: juandavid.francob@gmail.com
